@@ -71,4 +71,5 @@ class TestSmokeTest():
     self.driver.find_element(By.CSS_SELECTOR, "fieldset").click()
     self.driver.find_element(By.NAME, "submit").click()
     elements = self.driver.find_elements(By.NAME, "email")
+    assert len(elements) > 0
   
